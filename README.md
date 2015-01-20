@@ -4,8 +4,9 @@ Project NE Detection as DK Pro Component
 This (plain Java Project-no Maven - no Ant - no Eclipse plugin) can be used as a UIMA component to detect names in German
 novels. It uses a MaxEnt-Classifier ( which showed to perform better than a Linear Chain CRF ) to do so.
 
-The required model is stored in the resource Folder ( however it is expected that there will be changes during the next days !!!) This Project comes with all its dependendt jars included.
-Its only requirements are Mallet 2.07 RC2 , UIMA-Core and UIMA-Fit.
+The required model is stored in the resource Folder ( however it is expected that there will be changes during the next days !!!) This Project comes with all its dependend jars included.
+
+-(Its only requirements are Mallet 2.07 RC2 , UIMA-Core and UIMA-Fit).
 
 Basic usage ( in accordance with DKPro):
 ==========================================
@@ -14,7 +15,7 @@ Basic usage ( in accordance with DKPro):
  
     CollectionReaderDescription cr = createReaderDescription(TextReader.class,
             TextReader.PARAM_PATH,
-            "C:\\Users\\mrkug\\Desktop\\testDkPro\\Sack,-Gustav_Paralyse.txt",
+            "<Input-File>",
             TextReader.PARAM_LANGUAGE, "de");
 
     AnalysisEngineDescription segmenter = createEngineDescription(OpenNlpSegmenter.class);
@@ -33,7 +34,7 @@ Basic usage ( in accordance with DKPro):
     // =========
 
     AnalysisEngineDescription cc = createEngineDescription(CasDumpWriter.class,
-            CasDumpWriter.PARAM_OUTPUT_FILE, "C:\\Users\\mrkug\\Desktop\\testDkPro\\Bier2.xmi");
+            CasDumpWriter.PARAM_OUTPUT_FILE, "<outputfile>");
 
     runPipeline(cr, segmenter, tagger, neDetection, cc);
   }
