@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="libs/anna-3.61.jar"/>
+	<classpathentry kind="lib" path="libs/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="libs/jdom-1.1.jar"/>
+	<classpathentry kind="lib" path="libs/jgrapht-0.6.0.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="libs/mallet-2.0.7-RC2.jar"/>
+	<classpathentry kind="lib" path="libs/maxent-2.5.1.jar"/>
+	<classpathentry kind="lib" path="libs/opennlp-maxent-3.0.3.jar"/>
+	<classpathentry kind="lib" path="libs/opennlp-tools-1.5.3.jar"/>
+	<classpathentry kind="lib" path="libs/RadixTree-0.2.jar"/>
+	<classpathentry kind="lib" path="libs/trove-2.0.4.jar"/>
+	<classpathentry kind="lib" path="libs/uimafit-core-2.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/uimaj-core-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
